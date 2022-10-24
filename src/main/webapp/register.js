@@ -45,12 +45,13 @@ submitButton.addEventListener('click', async(event) => {
             invalidText.innerHTML = "Invalid Credentials. Please try again."
         }
     }
+});
+backButton.addEventListener('click', async(event) => {
+    event.preventDefault();
 
-    backButton.addEventListener('click', (event) => {
-        event.preventDefault();
+    console.log("back button");
 
-        setTimeout(() => {
-            window.location.replace('index.html');
-        }, 3000);
-    });
-})
+    setTimeout(() => {
+        window.location.replace('index.html');
+    }, 3000);
+});
